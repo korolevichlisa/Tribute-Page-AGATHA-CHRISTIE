@@ -9,7 +9,7 @@ body {
 .wrapper{
   background:#eee;
   margin:1.5em 0.5em;
-
+	padding:0.5rem;
 }
 
 #title{
@@ -40,6 +40,9 @@ img{
 h3:first-child{
   border-bottom:4px solid #dfdfe2;
   text-align:center;
+	width: 35%;
+	display:block;
+	margin:0 auto;
 }
 
 #tribute-info{
@@ -48,12 +51,24 @@ h3:first-child{
 }
 
 .list{
-  max-width: 40%;
+  max-width: 45%;
   margin: 0 auto;
   text-align:justify;
 }
 
-#tribute-link{
+
+@media (max-width: 600px) {
+  .list {
+    max-width: 75%;
+  }
+
+	h3:first-child{
+		width:80%;
+	}
+}
+
+#tribute-link1{
   padding:0.5em 0;
   text-align:center;
+  color:dark-grey;
 }
